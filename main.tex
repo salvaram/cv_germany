@@ -1,0 +1,244 @@
+%%%%%%%%%%%%%%%%%
+% * <shrabanipanigrahi@gmail.com> 2018-06-25T16:57:48.502Z:
+% https://www.visualcv.com/international/germany-cv/
+% https://www.en.lebenslaufmuster.biz/
+% ^.
+% This is an sample CV template created using altacv.cls
+% (v1.1.3, 30 April 2017) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons 
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+\documentclass[10pt,a4paper,normalphoto,ragged2e]{altacv}
+
+%\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% 
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font 
+%% folder.
+\usepackage{enumitem}
+%\usepackage{biblatex}
+%% sample.bib contains your publications
+\addbibresource{biblio.bib}
+%\usepackage[numbers,sort&compress,square]{natbib}
+% Change the page layout if you need to
+\geometry{left=0.8cm,right=7.8cm,marginparwidth=6.5cm,marginparsep=0.6cm,top=1.1cm,bottom=1.1cm,footskip=1\baselineskip}
+
+% Change the font if you want to.
+
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{darkblue}{HTML}{00394d}
+\definecolor{Mulberry}{HTML}{005c99}
+\definecolor{SlateGrey}{HTML}{000000}
+\definecolor{LightGrey}{HTML}{333333}
+\colorlet{heading}{darkblue}
+\colorlet{accent}{Mulberry}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+
+
+\begin{document}
+\name{Salvador E. Ramirez Ciarreta}
+\tagline{Physics Graduate}
+\photo{2.8cm}{photo2}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{salvae.ramci@protonmail.com}
+  \phone{01577-3761590}
+  \mailaddress{Rappstrasse 14, Hamburg 20146}
+  \linkedin{www.linkedin.com/in/salvae-ramci}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+%   \orcid{orcid.org/0000-0000-0000-0000}
+}
+
+%% Make the header extend all the way to the right, if you want. 
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+
+\cvevent{Junior Data Scientist}{Euler Hermes Rating}{January 2020 -- April 2020}{Hamburg}
+\begin{itemize}
+    \item Cleaning and processing raw datasets to produce usable data in the context of credit rating. 
+    \begin{itemize}[label=\textendash]
+        \item Understanding the structure of the raw dataset to differ useless data usable data. 
+        \item Reacting to changes in the structure of the raw dataset or the rating methodology.
+    \end{itemize}
+    \item Selection of appropriate criteria to classify companies for different company products. 
+    \begin{itemize}[label=\textendash]
+        \item Elaboration of additional sensitivity analysis to study the goodness of the selected criteria.
+    \end{itemize}
+    \item Search of trends and correlations in data that allow the prediction of future credit ratings. 
+    \begin{itemize}[label=\textendash]
+        \item Development and testing of hypothesis to predicts future ratings. 
+    \end{itemize}
+
+\end{itemize}
+\vspace{-3mm}
+\divider
+
+\cvevent{Research Assistant at Molecular Biomechanics Group}{Heidelberg Institute for Theoretical Studies}{March 2017 -- March 2019}{Heidelberg}
+\begin{itemize}
+    \item Objectives:
+    \begin{itemize}[label=\textendash]
+        \item Study with simulations the aggregation of Graphene and Carbon Nanotubes, in separated ensembles and in a mixture.
+        \item Find the configuration that optimizes mechanical properties.
+    \end{itemize}
+    \item Skills gained:
+        \begin{itemize}[label=\textendash]
+            \item Multiscale modeling of the system.
+            \item Long-term planning of the project and management of large amounts of data.
+            \item Selection of relevant information from raw data.
+            \item Python experience.
+        \end{itemize}
+\end{itemize}
+\vspace{-3mm}
+\divider
+
+\begin{comment}
+\cvevent{Master Thesis at Heidelberg University}{Directed by prof. Luca Amendola}{April 2018 -- Jan 2019}{Heidelberg}
+\begin{itemize}
+    \item Objectives:
+    \begin{itemize}[label=\textendash]
+        \item Study the viability of a specific cosmological model.
+        \item Development of new techniques to study such model.
+    \end{itemize}
+    \item Skills gained:
+    \begin{itemize}[label=\textendash]
+        \item Numerical implementation of physical models.
+        \item Statistical analysis.
+        \item Python experience.
+    \end{itemize}
+\end{itemize}
+\vspace{-3mm}
+\divider 
+
+\cvevent{Master Thesis at UCM}{Directed by prof. L.J. Garay and prof. J.A.R. Cembranos}{2015 -- 2016}{Madrid, Spain}
+\begin{itemize}
+    \item Objectives:
+    \begin{itemize}[label=\textendash]
+        \item Study of a class of models in theoretical physics.
+    \end{itemize}
+    \item Results:
+    \begin{itemize}[label=\textendash]
+        \item Obtention of relevant quantities regarding the model and a procedure to simplify such class of models for certain cases.
+    \end{itemize}
+    %\item Skills gained:
+    %\begin{itemize}[label=\textendash]
+    %    \item a
+    %\end{itemize}
+\end{itemize}
+\vspace{-3mm}
+\divider
+\end{comment}
+
+\cvevent{Private Tutor}{Mathematics and Physics}{2011 -- 2016}{Madrid, Spain}
+%\medskip
+
+%\vspace{20mm}
+\nocite{*}
+\cvsection{Voluntary Work}
+\cvevent{Conservation and Restoration of local Patrimony}{}{}{}
+\cvevent{}{Compagnons Bâtisseurs}{2014 Summer}{Baden, France}
+\begin{itemize}
+    \item Restoration of an ancient wall in the beach.
+\end{itemize}
+\cvevent{}{Solidarité Jeunesses}{2013 Summer}{Auvillar, France}
+\begin{itemize}
+    \item Restoration of a river port at Garonne river.
+\end{itemize}
+\cvevent{}{Solidarité Jeunesses}{2011 Summer}{Monteils, France}
+\begin{itemize}
+    \item Restoration of a wall from the XIX century.
+\end{itemize}
+
+%\vspace{2mm}
+
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+\begin{comment}
+\cvsection{Over-all Experience}
+\wheelchart{1.5cm}{0.5cm}{%
+  5/8em/accent!30/{Project Management}, 
+  3/8em/accent!40/Process Planning,
+  7/8em/accent!60/PDM PLM,
+  5.5/10em/accent/Project Pre-Study,
+  3.5/6em/accent!50/CAD
+}
+
+\vspace{7mm}
+
+\cvsection{Hobbies}
+
+\cvtag{Logo Designing} 
+\cvtag{Digital Banners and Card designing}
+\cvtag{Painting}
+\cvtag{Product concept sketching}
+\cvtag{Photography}
+\cvtag{Traveling}
+\cvtag{Cooking}
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the 
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+%%\addnextpagesidebar[-1ex]{page3sidebar}
+\end{comment}
+\begin{comment}
+\cvsection{Publications}
+\smallskip
+\nocite{*}
+\printbibliography[heading=none]%pubtype,title={\printinfo{\faFileTextO}{}}, type=article
+\end{comment}
+
+
+
+
+
+\end{document}
